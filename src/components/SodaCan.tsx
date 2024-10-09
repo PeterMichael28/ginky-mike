@@ -4,7 +4,7 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
 // Preload the GLTF file to improve loading times
-useGLTF.preload("/Soda-can.gltf");
+useGLTF.preload("/Soda-can.gltf", true, true);
 
 const flavorTextures = {
   lemonLime: "/labels/lemon-lime.png",
